@@ -70,8 +70,72 @@ class _DebugState extends State<Debug> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return new MaterialApp(
+    
+      home: deScreen()); 
+  }
+
+
+}
+
+class deScreen extends StatelessWidget {
+
+  CourseCard(first_name, last_name, course_title, image_name) {
+    return GestureDetector(
+      
+      onTap: () => Navigator.push(
+            context,
+            new MaterialPageRoute(builder: (context) => new Coursepage()),
+          ),
+      child: Container(
+        margin: EdgeInsets.all(8.0),
+        height: 100.0,
+        width: 133,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/$image_name.jpg'),
+            fit: BoxFit.fill,
+            alignment: Alignment.topCenter,
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+        ),
+        child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+          Text(
+            "$first_name",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          Text(
+            "$last_name",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          Divider(
+            height: 5.0,
+            thickness: 2.0,
+            indent: 57,
+            endIndent: 57,
+            color: Colors.white,
+          ),
+          Text(
+            "$course_title",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ]),
+      ),
+    );
+  }
+  const deScreen({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
         backgroundColor: Colors.black,
         body: ListView(children: [
           SizedBox(
