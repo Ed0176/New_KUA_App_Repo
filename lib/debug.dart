@@ -10,64 +10,6 @@ class Debug extends StatefulWidget {
 }
 
 class _DebugState extends State<Debug> {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  CourseCard(first_name, last_name, course_title, image_name) {
-    return GestureDetector(
-      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage())),
-      child: Container(
-        margin: EdgeInsets.all(8.0),
-        height: 100.0,
-        width: 133,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/$image_name.jpg'),
-            fit: BoxFit.fill,
-            alignment: Alignment.topCenter,
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(10.0)),
-        ),
-        child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-          Text(
-            "$first_name",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-          Text(
-            "$last_name",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-          Divider(
-            height: 5.0,
-            thickness: 2.0,
-            indent: 57,
-            endIndent: 57,
-            color: Colors.white,
-          ),
-          Text(
-            "$course_title",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        ]),
-      ),
-    );
-    // );
-  }
-
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(home: deScreen());
@@ -80,6 +22,14 @@ class deScreen extends StatefulWidget {
 }
 
 class _deScreenState extends State<deScreen> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   CourseCard(first_name, last_name, course_title, image_name) {
     return GestureDetector(
       onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage())),
@@ -290,9 +240,9 @@ class _deScreenState extends State<deScreen> {
             label: 'Profile',
           ),
         ],
-        //currentIndex: _selectedIndex,
+        currentIndex: _selectedIndex,
         selectedItemColor: Colors.orange,
-        // onTap: _onItemTapped,
+        onTap: _onItemTapped,
       ),
     );
   }
