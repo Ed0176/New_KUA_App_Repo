@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
 
   CourseCard(first_name, last_name, course_title, image_name) {
     return GestureDetector(
-       onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage())),
       child: Container(
         margin: EdgeInsets.all(8.0),
         height: 100.0,
