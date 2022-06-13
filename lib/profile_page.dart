@@ -6,6 +6,28 @@ class ProfilePage extends StatefulWidget {
   _ProfilePageState createState() => _ProfilePageState();
 }
 
+Widget theTiles(String title, String sub, IconData icon) {
+  return Column(
+    children: [
+      ListTile(
+          trailing: Icon(icon, color: Color.fromARGB(255, 241, 153, 55)),
+          focusColor: Color.fromARGB(255, 241, 153, 55),
+          title: Text(title, style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+          subtitle: Text(sub, style: TextStyle(fontSize: 20.0, color: Colors.white)),
+          tileColor: Color.fromARGB(255, 36, 36, 36),
+          onTap: () {
+            final Uri _emailLaunchUri = Uri(
+              // scheme: thescheme,
+              path: sub,
+            );
+
+            // launch(_emailLaunchUri.toString());
+          }),
+      Container(height: 5.0, color: Colors.black)
+    ],
+  );
+}
+
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
@@ -27,6 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
               ),
+              theTiles('1.What is Leadrship', '2:09', Icons.done),
             ])));
   }
 }
