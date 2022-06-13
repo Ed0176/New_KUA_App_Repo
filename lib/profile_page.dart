@@ -11,13 +11,14 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+            backgroundColor: Colors.black,
             body: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-      Center(
-        child: CircleAvatar(
-          backgroundImage: AssetImage("/images/avatar.jpg"),
-          radius: 100.0,
-        ),
-      ),
-    ])));
+              Center(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage("/images/avatar.jpg"),
+                  radius: 100.0,
+                ),
+              ),
+            ])));
   }
 }
