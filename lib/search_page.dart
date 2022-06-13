@@ -28,12 +28,13 @@ class _SearchPageState extends State<SearchPage> {
               color: Colors.grey[850],
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(
-                  "Food",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
+                    "Food",
+                    style: TextStyle(
+                      fontFamily: 'WaterBrush',
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
               ]),
             ),
             Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
