@@ -23,7 +23,7 @@ class _SearchPageState extends State<SearchPage> {
         ),
         backgroundColor: Colors.black,
         body: Container(
-          width: 50,
+          //width: 50,
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(
               color: Colors.grey[850],
@@ -32,7 +32,7 @@ class _SearchPageState extends State<SearchPage> {
                   "Food",
                   style: TextStyle(
                     fontFamily: 'WaterBrush',
-                    fontSize: 22.0,
+                    fontSize: 12.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -41,7 +41,7 @@ class _SearchPageState extends State<SearchPage> {
                   "Arts and Entertainment",
                   style: TextStyle(
                     fontFamily: 'WaterBrush',
-                    fontSize: 22.0,
+                    fontSize: 12.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
