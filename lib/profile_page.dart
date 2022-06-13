@@ -19,6 +19,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   radius: 100.0,
                 ),
               ),
+              Center(
+                child: Text("Green Green"),
+              ),
             ])));
   }
 }
