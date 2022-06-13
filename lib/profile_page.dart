@@ -7,24 +7,27 @@ class ProfilePage extends StatefulWidget {
 }
 
 Widget theTiles(String title, IconData icon) {
-  return Column(
-    children: [
-      ListTile(
-          leading: Icon(icon, color: Color.fromARGB(255, 241, 153, 55)),
-          focusColor: Color.fromARGB(255, 241, 153, 55),
-          title: Text(title, style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
-          //subtitle: Text(sub, style: TextStyle(fontSize: 20.0, color: Colors.white)),
-          tileColor: Color.fromARGB(255, 36, 36, 36),
-          onTap: () {
-            final Uri _emailLaunchUri = Uri(
-                // scheme: thescheme,
-                //path: sub,
-                );
+  return Padding(
+    padding: EdgeInsets.all(20.0),
+    child: Column(
+      children: [
+        ListTile(
+            leading: Icon(icon, color: Color.fromARGB(255, 241, 153, 55)),
+            focusColor: Color.fromARGB(255, 241, 153, 55),
+            title: Text(title, style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+            //subtitle: Text(sub, style: TextStyle(fontSize: 20.0, color: Colors.white)),
+            tileColor: Color.fromARGB(255, 36, 36, 36),
+            onTap: () {
+              final Uri _emailLaunchUri = Uri(
+                  // scheme: thescheme,
+                  //path: sub,
+                  );
 
-            // launch(_emailLaunchUri.toString());
-          }),
-      Container(height: 5.0, color: Colors.black)
-    ],
+              // launch(_emailLaunchUri.toString());
+            }),
+        Container(height: 5.0, color: Colors.black)
+      ],
+    ),
   );
 }
 
