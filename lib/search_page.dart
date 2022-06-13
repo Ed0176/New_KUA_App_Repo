@@ -26,19 +26,20 @@ class _SearchPageState extends State<SearchPage> {
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(
               color: Colors.grey[850],
-              child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
                   radius: 50.0,
                 ),
               ]),
             ),
-            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
               CircleAvatar(
                 backgroundImage: AssetImage("/images/avatar.jpg"),
                 radius: 50.0,
               ),
             ]),
+            SizedBox(width: 500, height: 500),
           ]),
         ),
       ),
