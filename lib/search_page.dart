@@ -24,13 +24,13 @@ class _SearchPageState extends State<SearchPage> {
             backgroundColor: Colors.black,
             body: Container(
                 child: Row(children: [
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Column(mainAxisAlignment: MainAxisAlignment.start, children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
                   radius: 50.0,
                 ),
               ]),
-              Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+              Column(mainAxisAlignment: MainAxisAlignment.end, children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
                   radius: 50.0,
