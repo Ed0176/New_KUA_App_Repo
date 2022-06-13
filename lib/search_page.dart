@@ -39,7 +39,7 @@ class _SearchPageState extends State<SearchPage> {
                 radius: 50.0,
               ),
             ]),
-            SizedBox(width: 500, height: 500),
+            //SizedBox(width: 500, height: 500),
           ]),
         ),
       ),
