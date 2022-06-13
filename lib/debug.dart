@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:helloworld/vid.dart';
 import 'list.dart';
 import 'lessons_page.dart';
+import 'profile_page.dart';
 
 class Debug extends StatefulWidget {
   const Debug({Key? key}) : super(key: key);
@@ -29,8 +30,8 @@ class _deScreenState extends State<deScreen> {
     //() => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
     //print(_selectedIndex);
     print(index);
-    if (index == 1) {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
+    if (index == 2) {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage()));
     }
     setState(() {
       _selectedIndex = index;
