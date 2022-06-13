@@ -10,9 +10,10 @@ import 'lessons_page.dart';
 import 'debug.dart';
 import 'profile_page.dart';
 import 'search_page.dart';
+import 'navbar.dart';
 
 void main() {
-  runApp(SearchPage());
+  runApp(NavBar());
 }
 
 class Login extends StatefulWidget {
