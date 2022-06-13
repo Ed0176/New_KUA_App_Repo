@@ -29,7 +29,7 @@ class _SearchPageState extends State<SearchPage> {
               color: Colors.grey[850],
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Padding(
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(5.0),
                   child: Text(
                     "Food",
                     style: TextStyle(
