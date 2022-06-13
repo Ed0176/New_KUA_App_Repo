@@ -12,10 +12,12 @@ class _ProfilePageState extends State<ProfilePage> {
     return MaterialApp(
         home: Scaffold(
             body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      CircleAvatar(
-        backgroundImage: AssetImage("/images/avatar.jpg"),
-        radius: 100.0,
-      )
+      Center(
+        child: CircleAvatar(
+          backgroundImage: AssetImage("/images/avatar.jpg"),
+          radius: 100.0,
+        ),
+      ),
     ])));
   }
 }
