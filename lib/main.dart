@@ -7,9 +7,12 @@ import 'list.dart';
 import 'home.dart';
 import 'vid.dart';
 import 'lessons_page.dart';
+import 'debug.dart';
+import 'profile_page.dart';
+import 'search_page.dart';
 
 void main() {
-  runApp(Home());
+  runApp(Debug());
 }
 
 class Login extends StatefulWidget {
