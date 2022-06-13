@@ -37,7 +37,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              //title: Text('Course'),
+              title: Text('Course'),
               backgroundColor: Colors.black,
               leading: IconButton(
                 icon: Icon(Icons.arrow_back, color: Colors.white),
