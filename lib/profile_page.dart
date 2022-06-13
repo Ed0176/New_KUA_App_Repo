@@ -10,7 +10,7 @@ Widget theTiles(String title, String sub, IconData icon) {
   return Column(
     children: [
       ListTile(
-          trailing: Icon(icon, color: Color.fromARGB(255, 241, 153, 55)),
+          leading: Icon(icon, color: Color.fromARGB(255, 241, 153, 55)),
           focusColor: Color.fromARGB(255, 241, 153, 55),
           title: Text(title, style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
           subtitle: Text(sub, style: TextStyle(fontSize: 20.0, color: Colors.white)),
