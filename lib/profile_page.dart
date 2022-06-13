@@ -9,11 +9,12 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Column(children: [
+    return MaterialApp(
+        home: Scaffold(
+            body: Column(children: [
       CircleAvatar(
         backgroundImage: AssetImage("avatar.jpg"),
       )
-    ]));
+    ])));
   }
 }
