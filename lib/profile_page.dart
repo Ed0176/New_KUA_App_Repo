@@ -43,7 +43,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               Center(
                 child: Padding(
-                  padding: EdgeInsets.all(12.0),
+                  padding: EdgeInsets.all(20.0),
                   child: Text(
                     "Green Green",
                     style: TextStyle(
