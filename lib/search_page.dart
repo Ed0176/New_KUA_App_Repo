@@ -10,35 +10,37 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(
-              //title: Text('Course'),
-              backgroundColor: Colors.black,
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back, color: Colors.white),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/');
-                },
+      home: Scaffold(
+        appBar: AppBar(
+          //title: Text('Course'),
+          backgroundColor: Colors.black,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.white),
+            onPressed: () {
+              Navigator.pushNamed(context, '/');
+            },
+          ),
+        ),
+        backgroundColor: Colors.black,
+        body: Container(
+          child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              CircleAvatar(
+                backgroundImage: AssetImage("/images/avatar.jpg"),
+                radius: 50.0,
               ),
-            ),
-            backgroundColor: Colors.black,
-            body: Container(
-                child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage("/images/avatar.jpg"),
-                  radius: 50.0,
-                ),
-              ]),
-              Container(
-                child: Column(crossAxisAlignment: CrossAxisAlignment.end,
-                  //color: Colors.black,
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage("/images/avatar.jpg"),
-                      radius: 50.0,
-                    ),
-                  ]),
-            ]),),),));
+            ]),
+            Column(crossAxisAlignment: CrossAxisAlignment.end,
+                //color: Colors.black,
+                children: [
+                  CircleAvatar(
+                    backgroundImage: AssetImage("/images/avatar.jpg"),
+                    radius: 50.0,
+                  ),
+                ]),
+          ]),
+        ),
+      ),
+    );
   }
 }
