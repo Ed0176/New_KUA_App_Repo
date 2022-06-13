@@ -23,7 +23,7 @@ class _SearchPageState extends State<SearchPage> {
             ),
             backgroundColor: Colors.black,
             body: Container(
-                child: Row(children: [
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
