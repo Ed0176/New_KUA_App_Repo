@@ -50,6 +50,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   child: Text(
                     "Green Green",
                     style: TextStyle(
+                      fontFamily: 'WaterBrush',
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
                   ),
