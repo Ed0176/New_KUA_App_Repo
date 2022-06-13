@@ -13,7 +13,7 @@ class _ProfilePageState extends State<ProfilePage> {
         home: Scaffold(
             body: Column(children: [
       CircleAvatar(
-        backgroundImage: AssetImage("avatar.jpg"),
+        backgroundImage: AssetImage("/images/avatar.jpg"),
       )
     ])));
   }
