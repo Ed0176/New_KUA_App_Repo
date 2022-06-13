@@ -23,6 +23,7 @@ class _SearchPageState extends State<SearchPage> {
         ),
         backgroundColor: Colors.black,
         body: Container(
+          width: 100,
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(
               color: Colors.grey[850],
