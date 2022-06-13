@@ -47,6 +47,8 @@ class _SearchPageState extends State<SearchPage> {
                 TextTile('Arts and Entertainment'),
                 TextTile('Technology'),
                 TextTile('Politics'),
+                TextTile('Writing'),
+                TextTile('Business and Leadership'),
                 Text(
                   "Technology",
                   style: TextStyle(
