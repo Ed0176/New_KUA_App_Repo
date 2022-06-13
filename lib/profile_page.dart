@@ -6,7 +6,7 @@ class ProfilePage extends StatefulWidget {
   _ProfilePageState createState() => _ProfilePageState();
 }
 
-Widget theTiles(String title, String sub, IconData icon) {
+Widget theTiles(String title, IconData icon) {
   return Column(
     children: [
       ListTile(
@@ -17,9 +17,9 @@ Widget theTiles(String title, String sub, IconData icon) {
           tileColor: Color.fromARGB(255, 36, 36, 36),
           onTap: () {
             final Uri _emailLaunchUri = Uri(
-              // scheme: thescheme,
-              path: sub,
-            );
+                // scheme: thescheme,
+                //path: sub,
+                );
 
             // launch(_emailLaunchUri.toString());
           }),
@@ -49,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
               ),
-              theTiles('1.What is Leadrship', '2:09', Icons.account_circle),
+              theTiles('1.What is Leadrship', Icons.account_circle),
             ])));
   }
 }
