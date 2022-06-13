@@ -8,9 +8,10 @@ import 'home.dart';
 import 'vid.dart';
 import 'lessons_page.dart';
 import 'debug.dart';
+import 'profile_page.dart';
 
 void main() {
-  runApp(Debug());
+  runApp(ProfilePage());
 }
 
 class Login extends StatefulWidget {
