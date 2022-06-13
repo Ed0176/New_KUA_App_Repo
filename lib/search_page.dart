@@ -30,12 +30,14 @@ class _SearchPageState extends State<SearchPage> {
                   radius: 50.0,
                 ),
               ]),
-              Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage("/images/avatar.jpg"),
-                  radius: 50.0,
-                ),
-              ]),
+              Column(crossAxisAlignment: CrossAxisAlignment.end,
+                  //color: Colors.black,
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: AssetImage("/images/avatar.jpg"),
+                      radius: 50.0,
+                    ),
+                  ]),
             ]))));
   }
 }
