@@ -30,7 +30,8 @@ class _SearchPageState extends State<SearchPage> {
                   radius: 50.0,
                 ),
               ]),
-              Column(crossAxisAlignment: CrossAxisAlignment.end,
+              Container(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.end,
                   //color: Colors.black,
                   children: [
                     CircleAvatar(
@@ -38,6 +39,6 @@ class _SearchPageState extends State<SearchPage> {
                       radius: 50.0,
                     ),
                   ]),
-            ]))));
+            ]),),),));
   }
 }
