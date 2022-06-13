@@ -14,7 +14,7 @@ import 'navbar.dart';
 import 'del.dart';
 
 void main() {
-  runApp(SearchPage());
+  runApp(Del());
 }
 
 class Login extends StatefulWidget {
