@@ -27,10 +27,9 @@ class _deScreenState extends State<deScreen> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
-      if (index == 2) {
-        onTap:
-        () => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
-      }
+
+      onTap:
+      () => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
     });
   }
 
