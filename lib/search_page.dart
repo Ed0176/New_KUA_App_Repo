@@ -41,7 +41,7 @@ class _SearchPageState extends State<SearchPage> {
                   "Arts and Entertainment",
                   style: TextStyle(
                     fontFamily: 'WaterBrush',
-                    fontSize: 12.0,
+                    fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
