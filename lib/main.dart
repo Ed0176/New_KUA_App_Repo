@@ -11,7 +11,7 @@ import 'debug.dart';
 import 'profile_page.dart';
 
 void main() {
-  runApp(ProfilePage());
+  runApp(Debug());
 }
 
 class Login extends StatefulWidget {
