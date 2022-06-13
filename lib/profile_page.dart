@@ -36,6 +36,16 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+            appBar: AppBar(
+              //title: Text('Course'),
+              backgroundColor: Colors.black,
+              leading: IconButton(
+                icon: Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/');
+                },
+              ),
+            ),
             backgroundColor: Colors.black,
             body: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
               Center(
