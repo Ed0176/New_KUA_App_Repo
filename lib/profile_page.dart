@@ -42,10 +42,13 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               Center(
-                child: Text(
-                  "Green Green",
-                  style: TextStyle(
-                    color: Colors.white,
+                child: Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text(
+                    "Green Green",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
