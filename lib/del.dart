@@ -11,8 +11,8 @@ class _DelState extends State<Del> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Container(
-      child: NavBar(),
+        home: Scaffold(
+      body: NavBar(),
     ));
   }
 }
