@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'navbar';
+import 'navbar.dart';
 
 class Del extends StatefulWidget {
   const Del({Key? key}) : super(key: key);
