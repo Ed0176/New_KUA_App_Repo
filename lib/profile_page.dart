@@ -8,7 +8,7 @@ class ProfilePage extends StatefulWidget {
 
 Widget theTiles(String title, IconData icon) {
   return Padding(
-    padding: EdgeInsets.all(20.0),
+    padding: EdgeInsets.all(12.0),
     child: Column(
       children: [
         ListTile(
