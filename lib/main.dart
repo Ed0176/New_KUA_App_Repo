@@ -9,11 +9,12 @@ import 'vid.dart';
 import 'lessons_page.dart';
 import 'debug.dart';
 import 'profile_page.dart';
-import 'search_page.dart';
+//import 'search_page.dart';
 import 'navbar.dart';
+import 'del.dart';
 
 void main() {
-  runApp(NavBar());
+  runApp(SearchPage());
 }
 
 class Login extends StatefulWidget {
