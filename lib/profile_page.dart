@@ -50,6 +50,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               theTiles('Account', Icons.account_circle),
+              theTiles('Account', Icons.bookmark),
+              theTiles('Account', Icons.done),
             ])));
   }
 }
