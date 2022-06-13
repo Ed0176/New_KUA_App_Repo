@@ -20,10 +20,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               Center(
-                child: Text("Green Green",
-                    style: TextStyle(
-                      color: Colors.white,
-                    )),
+                child: Text(
+                  "Green Green",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ])));
   }
