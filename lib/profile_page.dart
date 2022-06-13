@@ -49,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
               ),
-              theTiles('1.What is Leadrship', Icons.account_circle),
+              theTiles('Account', Icons.account_circle),
             ])));
   }
 }
