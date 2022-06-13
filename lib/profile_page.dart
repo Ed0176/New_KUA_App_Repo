@@ -13,7 +13,7 @@ Widget theTiles(String title, String sub, IconData icon) {
           leading: Icon(icon, color: Color.fromARGB(255, 241, 153, 55)),
           focusColor: Color.fromARGB(255, 241, 153, 55),
           title: Text(title, style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
-          subtitle: Text(sub, style: TextStyle(fontSize: 20.0, color: Colors.white)),
+          //subtitle: Text(sub, style: TextStyle(fontSize: 20.0, color: Colors.white)),
           tileColor: Color.fromARGB(255, 36, 36, 36),
           onTap: () {
             final Uri _emailLaunchUri = Uri(
