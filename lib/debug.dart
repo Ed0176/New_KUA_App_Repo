@@ -29,6 +29,9 @@ class _deScreenState extends State<deScreen> {
     //() => Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
     //print(_selectedIndex);
     print(index);
+    if (index == 1) {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Coursepage()));
+    }
     setState(() {
       _selectedIndex = index;
     });
