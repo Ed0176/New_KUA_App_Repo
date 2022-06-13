@@ -28,13 +28,16 @@ class _SearchPageState extends State<SearchPage> {
             Container(
               color: Colors.grey[850],
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(
-                  "Food",
-                  style: TextStyle(
-                    fontFamily: 'WaterBrush',
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text(
+                    "Food",
+                    style: TextStyle(
+                      fontFamily: 'WaterBrush',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 Text(
