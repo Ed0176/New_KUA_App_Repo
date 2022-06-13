@@ -36,6 +36,24 @@ class _SearchPageState extends State<SearchPage> {
                     color: Colors.white,
                   ),
                 ),
+                Text(
+                  "Arts and Entertainment",
+                  style: TextStyle(
+                    fontFamily: 'WaterBrush',
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "Technology",
+                  style: TextStyle(
+                    fontFamily: 'WaterBrush',
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
               ]),
             ),
             Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
