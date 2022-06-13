@@ -6,6 +6,21 @@ class SearchPage extends StatefulWidget {
   _SearchPageState createState() => _SearchPageState();
 }
 
+Widget TextTile(title) {
+  return Padding(
+    padding: EdgeInsets.all(10.0),
+    child: Text(
+      "$title",
+      style: TextStyle(
+        fontFamily: 'WaterBrush',
+        fontSize: 16.0,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+    ),
+  );
+}
+
 class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
@@ -28,6 +43,7 @@ class _SearchPageState extends State<SearchPage> {
             Container(
               color: Colors.grey[850],
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                TextTile('Food'),
                 Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Text(
