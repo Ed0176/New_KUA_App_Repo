@@ -45,15 +45,8 @@ class _SearchPageState extends State<SearchPage> {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 TextTile('Food'),
                 TextTile('Arts and Entertainment'),
-                Text(
-                  "Arts and Entertainment",
-                  style: TextStyle(
-                    fontFamily: 'WaterBrush',
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
+                TextTile('Technology'),
+                TextTile('Politics'),
                 Text(
                   "Technology",
                   style: TextStyle(
