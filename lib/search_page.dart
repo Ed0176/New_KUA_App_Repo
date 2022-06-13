@@ -32,7 +32,7 @@ class _SearchPageState extends State<SearchPage> {
                   "Food",
                   style: TextStyle(
                     fontFamily: 'WaterBrush',
-                    fontSize: 12.0,
+                    fontSize: 16.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -50,7 +50,7 @@ class _SearchPageState extends State<SearchPage> {
                   "Technology",
                   style: TextStyle(
                     fontFamily: 'WaterBrush',
-                    fontSize: 22.0,
+                    fontSize: 16.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
