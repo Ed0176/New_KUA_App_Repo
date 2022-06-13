@@ -49,15 +49,6 @@ class _SearchPageState extends State<SearchPage> {
                 TextTile('Politics'),
                 TextTile('Writing'),
                 TextTile('Business and Leadership'),
-                Text(
-                  "Technology",
-                  style: TextStyle(
-                    fontFamily: 'WaterBrush',
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
               ]),
             ),
             Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
