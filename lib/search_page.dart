@@ -31,7 +31,7 @@ class _SearchPageState extends State<SearchPage> {
               ),
             ]),
             Container(
-              color: Colors.grey,
+              color: Colors.grey[500],
               child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
