@@ -11,7 +11,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            body: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+            body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       CircleAvatar(
         backgroundImage: AssetImage("/images/avatar.jpg"),
         radius: 100.0,
