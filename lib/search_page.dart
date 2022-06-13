@@ -27,13 +27,13 @@ class _SearchPageState extends State<SearchPage> {
               Column(children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
-                  radius: 100.0,
+                  radius: 50.0,
                 ),
               ]),
               Column(children: [
                 CircleAvatar(
                   backgroundImage: AssetImage("/images/avatar.jpg"),
-                  radius: 100.0,
+                  radius: 50.0,
                 ),
               ]),
             ]))));
