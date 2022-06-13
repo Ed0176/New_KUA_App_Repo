@@ -11,7 +11,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(
+          appBar: AppBar(
               //title: Text('Course'),
               backgroundColor: Colors.black,
               leading: IconButton(
@@ -22,6 +22,22 @@ class _SearchPageState extends State<SearchPage> {
               ),
             ),
             backgroundColor: Colors.black,
-            body: Container()));
+          body: Container(
+            child: Column(
+              children:[
+                Column(children:[CircleAvatar(
+                  backgroundImage: AssetImage("/images/avatar.jpg"),
+                  radius: 100.0,
+                ),]),
+                Column(Column(children:[CircleAvatar(
+                  backgroundImage: AssetImage("/images/avatar.jpg"),
+                  radius: 100.0,
+                ),]),
+              ]
+            )
+          )
+        )
+    );
   }
 }
+
