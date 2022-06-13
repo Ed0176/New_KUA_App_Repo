@@ -14,7 +14,7 @@ class _ProfilePageState extends State<ProfilePage> {
             body: Column(children: [
       CircleAvatar(
         backgroundImage: AssetImage("/images/avatar.jpg"),
-        radius: 10.0,
+        radius: 200.0,
       )
     ])));
   }
